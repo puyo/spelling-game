@@ -6,32 +6,42 @@ export default class PhaserGame extends React.Component {
       return
     }
 
-    console.log("here")
-
-    const rootEl = this._rootEl
-
-    const preload = () => {
+    function preload() {
       console.log("preloading")
-      game.load.atlasJSONHash('bot', 'static/assets/sprites/running_bot.png', 'static/assets/sprites/running_bot.json')
+      this.load.atlas('bot', '/static/assets/sprites/running_bot.png', '/static/assets/sprites/running_bot.json')
     }
 
-    const create = () => {
+    function create() {
+      console.log("creating")
+
       //  This sprite is using a texture atlas for all of its animation data
-      var bot = game.add.sprite(200, 200, 'bot')
+      const bot = this.add.sprite(200, 200, 'bot')
 
       //  Here we add a new animation called 'run'
       //  We haven't specified any frames because it's using every frame in the texture atlas
-      bot.animations.add('run')
+      // bot.play('run')
 
       //  And this starts the animation playing by using its key ("run")
       //  15 is the frame rate (15fps)
       //  true means it will loop when it finishes
-      bot.animations.play('run', 15, true)
+      // bot.play('run', 15, true)
     }
 
-    const game = new Phaser.Game(800, 600, Phaser.AUTO, rootEl, { preload: preload, create: create })
+    const update = () => {}
 
-    console.log("made game", game)
+    const config = {
+      type: Phaser.AUTO,
+      width: 800,
+      height: 600,
+      parent: this._rootEl,
+      scene: {
+        preload: preload,
+        create: create,
+        update: update
+      }
+    };
+
+    const game = new Phaser.Game(config);
   }
 
   shouldComponentUpdate() {
