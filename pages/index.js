@@ -1,5 +1,9 @@
-function Home() {
-  return <div>Welcome to Next.js!</div>;
-}
+import dynamic from 'next/dynamic'
 
-export default Home;
+const PhaserGame = dynamic(() => import('../components/PhaserGame'), {
+  ssr: false
+})
+
+export default function Home() {
+  return <PhaserGame />;
+}
