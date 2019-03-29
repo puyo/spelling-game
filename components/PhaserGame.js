@@ -2,10 +2,6 @@ import 'phaser'
 
 export default class PhaserGame extends React.Component {
   componentDidMount() {
-    if (window == null) {
-      return
-    }
-
     function preload() {
       console.log("preloading")
       this.load.atlas('bot', '/static/assets/sprites/running_bot.png', '/static/assets/sprites/running_bot.json')
