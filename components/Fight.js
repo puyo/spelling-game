@@ -17,11 +17,14 @@ class FightScene extends Phaser.Scene {
   preload () {
     this.load.setPath('/static/assets/');
     this.load.image('bg', 'bg/castle-hallway.jpg');
+    this.load.image('boy-face', 'sprites/boy-face.svg');
     this.load.atlas('bot', 'sprites/running_bot.png', 'sprites/running_bot.json')
   }
 
   create () {
     this.add.image(400, 300, 'bg')
+
+    this.add.sprite(250, 700, 'boy-face').setScale(0.5, 0.5)
 
     const bot = this.add.sprite(650, 500, 'bot').setScale(2, 2)
     const frames = this.anims.generateFrameNames('bot', { prefix: 'run', zeroPad: 2, start: 0, end: 10 })
