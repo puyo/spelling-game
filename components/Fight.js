@@ -36,7 +36,12 @@ class FightScene extends Phaser.Scene {
       repeat: -1
     });
 
-    this._wordText = this.add.text(400, 100, '', { font: '16px Courier', fill: '#00ff00' }).setDepth(1).setScrollFactor(0)
+    this._wordText =
+      this.add.text(400, 100, '', { font: '24px Arial', fill: 'white' })
+      .setDepth(1)
+      .setScrollFactor(0)
+      .setStroke('black', 1)
+      .setFontStyle('bold')
 
     // this.anims.play('run', bot);
 
