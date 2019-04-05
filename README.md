@@ -13,3 +13,4 @@ npm run dev
 
 Browse to http://localhost:3000
 
+![Concept Art - Fight Scene](art/fight.svg)
