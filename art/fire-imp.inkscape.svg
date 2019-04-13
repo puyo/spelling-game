@@ -9,13 +9,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="47.478683mm"
+   height="73.977852mm"
+   viewBox="0 0 47.478683 73.977852"
    version="1.1"
    id="svg1762"
    inkscape:version="0.92.4 (da74ff7714, 2019-03-29)"
-   sodipodi:docname="fire-imp.inkscape.svg">
+   sodipodi:docname="fire-imp.inkscape.svg"
+   inkscape:export-filename="/Users/greg/projects/spelling-game/art/fire-imp.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <defs
      id="defs1756">
     <inkscape:path-effect
@@ -477,15 +480,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="274.05335"
-     inkscape:cy="916.33502"
+     inkscape:cx="153.59829"
+     inkscape:cy="121.84998"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer12"
+     inkscape:current-layer="svg1762"
      showgrid="false"
      inkscape:window-width="3008"
      inkscape:window-height="1647"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-x="-1"
+     inkscape:window-y="23"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata1759">
@@ -501,9 +504,10 @@
   </metadata>
   <g
      inkscape:groupmode="layer"
-     id="layer12"
+     id="head"
      inkscape:label="head"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(-17.838035,-12.814648)">
     <path
        transform="translate(-213.31867,-200.852)"
        style="display:inline;fill:#ff2a2a;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
@@ -531,9 +535,11 @@
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer11"
+     id="body
+"
      inkscape:label="body"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(-17.838035,-12.814648)">
     <path
        transform="translate(-213.31867,-200.852)"
        style="display:inline;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
@@ -569,8 +575,9 @@
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer13"
-     inkscape:label="mouth">
+     id="mouth"
+     inkscape:label="mouth"
+     transform="translate(-17.838035,-12.814648)">
     <path
        transform="translate(-213.31867,-200.852)"
        style="display:inline;fill:#000000;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
@@ -582,9 +589,10 @@
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer7"
+     id="arm-r"
      inkscape:label="arm-r"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(-17.838035,-12.814648)">
     <path
        transform="translate(-213.31867,-200.852)"
        style="display:inline;fill:#000000;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
@@ -596,11 +604,12 @@
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer8"
-     inkscape:label="arm-l">
+     id="arm-l"
+     inkscape:label="arm-l"
+     transform="translate(-17.838035,-12.814648)">
     <path
        transform="translate(-213.31867,-200.852)"
-       style="display:inline;fill:#000000;stroke:none;stroke-width:0.26458332000000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#000000;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
        d="m 240.19205,265.58073 c 0.0667,0.61473 -1.25999,1.49551 -2.55376,2.34412 -0.89991,0.59026 -1.76997,1.08691 -2.47586,1.2677 -0.42472,0.11624 -0.76734,0.0997 -0.96484,-0.0978 -0.19526,-0.19524 -0.21843,-0.54204 -0.0809,-0.97308 0.22488,-0.71145 0.91692,-1.70412 2.0951,-2.43703 2.03835,-1.26799 3.90107,-0.83305 3.98022,-0.10389 z"
        id="path6280"
        inkscape:connector-curvature="0"
@@ -609,9 +618,10 @@
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer9"
+     id="leg-r"
      inkscape:label="leg-r"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(-17.838035,-12.814648)">
     <path
        transform="translate(-213.31867,-200.852)"
        style="display:inline;fill:#000000;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
@@ -623,9 +633,10 @@
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer10"
+     id="leg-l"
      inkscape:label="leg-l"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(-17.838035,-12.814648)">
     <path
        transform="translate(-213.31867,-200.852)"
        style="display:inline;fill:#000000;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
@@ -637,9 +648,10 @@
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer6"
+     id="tail"
      inkscape:label="tail"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(-17.838035,-12.814648)">
     <path
        transform="translate(-213.31867,-200.852)"
        style="display:inline;fill:#000000;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
@@ -675,9 +687,10 @@
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer2"
+     id="brow-r"
      inkscape:label="eyebrow-r"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(-17.838035,-12.814648)">
     <path
        transform="translate(-213.31867,-200.852)"
        style="fill:#000000;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
@@ -689,9 +702,10 @@
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer3"
+     id="brow-l"
      inkscape:label="eyebrow-l"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(-17.838035,-12.814648)">
     <path
        transform="translate(-213.31867,-200.852)"
        style="fill:#000000;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
@@ -703,9 +717,10 @@
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer4"
+     id="eye-r"
      inkscape:label="eye-r"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(-17.838035,-12.814648)">
     <path
        transform="translate(-213.31867,-200.852)"
        style="fill:#000000;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
@@ -717,9 +732,10 @@
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer5"
+     id="eye-l"
      inkscape:label="eye-l"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(-17.838035,-12.814648)">
     <path
        transform="translate(-213.31867,-200.852)"
        style="fill:#000000;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
