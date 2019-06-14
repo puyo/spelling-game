@@ -1,0 +1,23 @@
+<h1>Show Result</h1>
+
+<ul>
+
+  <li>
+    <strong>Performance:</strong>
+    <%= @result.performance %>
+  </li>
+
+  <li>
+    <strong>Current difficulty:</strong>
+    <%= @result.current_difficulty %>
+  </li>
+
+  <li>
+    <strong>Current spacing:</strong>
+    <%= @result.current_spacing %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.result_path(@conn, :edit, @result) %></span>
+<span><%= link "Back", to: Routes.result_path(@conn, :index) %></span>

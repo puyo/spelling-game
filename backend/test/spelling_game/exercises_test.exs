@@ -63,4 +63,67 @@ defmodule SpellingGame.ExercisesTest do
       assert %Ecto.Changeset{} = Exercises.change_word(word)
     end
   end
+
+  describe "results" do
+    alias SpellingGame.Exercises.Result
+
+    @valid_attrs %{current_difficulty: 120.5, current_spacing: 120.5, performance: 120.5}
+    @update_attrs %{current_difficulty: 456.7, current_spacing: 456.7, performance: 456.7}
+    @invalid_attrs %{current_difficulty: nil, current_spacing: nil, performance: nil}
+
+    def result_fixture(attrs \\ %{}) do
+      {:ok, result} =
+        attrs
+        |> Enum.into(@valid_attrs)
+        |> Exercises.create_result()
+
+      result
+    end
+
+    test "list_results/0 returns all results" do
+      result = result_fixture()
+      assert Exercises.list_results() == [result]
+    end
+
+    test "get_result!/1 returns the result with given id" do
+      result = result_fixture()
+      assert Exercises.get_result!(result.id) == result
+    end
+
+    test "create_result/1 with valid data creates a result" do
+      assert {:ok, %Result{} = result} = Exercises.create_result(@valid_attrs)
+      assert result.current_difficulty == 120.5
+      assert result.current_spacing == 120.5
+      assert result.performance == 120.5
+    end
+
+    test "create_result/1 with invalid data returns error changeset" do
+      assert {:error, %Ecto.Changeset{}} = Exercises.create_result(@invalid_attrs)
+    end
+
+    test "update_result/2 with valid data updates the result" do
+      result = result_fixture()
+      assert {:ok, %Result{} = result} = Exercises.update_result(result, @update_attrs)
+      assert result.current_difficulty == 456.7
+      assert result.current_spacing == 456.7
+      assert result.performance == 456.7
+    end
+
+    test "update_result/2 with invalid data returns error changeset" do
+      result = result_fixture()
+      assert {:error, %Ecto.Changeset{}} = Exercises.update_result(result, @invalid_attrs)
+      assert result == Exercises.get_result!(result.id)
+    end
+
+    test "delete_result/1 deletes the result" do
+      result = result_fixture()
+      assert {:ok, %Result{}} = Exercises.delete_result(result)
+      assert_raise Ecto.NoResultsError, fn -> Exercises.get_result!(result.id) end
+    end
+
+    test "change_result/1 returns a result changeset" do
+      result = result_fixture()
+      assert %Ecto.Changeset{} = Exercises.change_result(result)
+    end
+  end
 end
