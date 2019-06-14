@@ -113,8 +113,10 @@ defmodule SpellingGame.Exercises do
       [%Result{}, ...]
 
   """
-  def list_results do
-    Repo.all(Result)
+  def list_results(user_id) do
+    Result
+    |> where(user_id: ^user_id)
+    |> Repo.all()
   end
 
   @doc """

@@ -3,9 +3,9 @@ defmodule SpellingGameWeb.WordControllerTest do
 
   alias SpellingGame.Exercises
 
-  @create_attrs %{prompt: "some prompt", word: "some word"}
-  @update_attrs %{prompt: "some updated prompt", word: "some updated word"}
-  @invalid_attrs %{prompt: nil, word: nil}
+  @create_attrs %{difficulty: 120.5, prompt: "some prompt", word: "some word"}
+  @update_attrs %{difficulty: 456.7, prompt: "some updated prompt", word: "some updated word"}
+  @invalid_attrs %{difficulty: nil, prompt: nil, word: nil}
 
   def fixture(:word) do
     {:ok, word} = Exercises.create_word(@create_attrs)

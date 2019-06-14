@@ -3,6 +3,7 @@ defmodule SpellingGame.Exercises.Word do
   import Ecto.Changeset
 
   schema "words" do
+    field :difficulty, :float
     field :prompt, :string
     field :word, :string
 
@@ -12,7 +13,7 @@ defmodule SpellingGame.Exercises.Word do
   @doc false
   def changeset(word, attrs) do
     word
-    |> cast(attrs, [:word, :prompt])
-    |> validate_required([:word, :prompt])
+    |> cast(attrs, [:word, :prompt, :difficulty])
+    |> validate_required([:word, :prompt, :difficulty])
   end
 end

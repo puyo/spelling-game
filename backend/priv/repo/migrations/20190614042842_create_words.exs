@@ -5,6 +5,7 @@ defmodule SpellingGame.Repo.Migrations.CreateWords do
     create table(:words) do
       add :word, :string
       add :prompt, :string
+      add :difficulty, :float
 
       timestamps()
     end

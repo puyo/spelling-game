@@ -13,6 +13,10 @@
   <%= text_input f, :prompt %>
   <%= error_tag f, :prompt %>
 
+  <%= label f, :difficulty %>
+  <%= number_input f, :difficulty, step: "any" %>
+  <%= error_tag f, :difficulty %>
+
   <div>
     <%= submit "Save" %>
   </div>

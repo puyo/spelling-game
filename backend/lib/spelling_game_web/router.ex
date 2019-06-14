@@ -19,7 +19,10 @@ defmodule SpellingGameWeb.Router do
     get "/", PageController, :index
 
     resources "/words", WordController
-    resources "/users", UserController
+
+    resources "/users", UserController do
+      resources "/results", ResultController
+    end
   end
 
   # Other scopes may use custom stacks.

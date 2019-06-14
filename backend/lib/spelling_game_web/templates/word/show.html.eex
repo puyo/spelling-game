@@ -12,6 +12,11 @@
     <%= @word.prompt %>
   </li>
 
+  <li>
+    <strong>Difficulty:</strong>
+    <%= @word.difficulty %>
+  </li>
+
 </ul>
 
 <span><%= link "Edit", to: Routes.word_path(@conn, :edit, @word) %></span>

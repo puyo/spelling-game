@@ -5,6 +5,7 @@
     <tr>
       <th>Word</th>
       <th>Prompt</th>
+      <th>Difficulty</th>
 
       <th></th>
     </tr>
@@ -14,6 +15,7 @@
     <tr>
       <td><%= word.word %></td>
       <td><%= word.prompt %></td>
+      <td><%= word.difficulty %></td>
 
       <td>
         <%= link "Show", to: Routes.word_path(@conn, :show, word) %>
