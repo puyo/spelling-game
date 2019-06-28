@@ -116,6 +116,7 @@ defmodule SpellingGame.Exercises do
   def list_results(user_id) do
     Result
     |> where(user_id: ^user_id)
+    |> preload([:word])
     |> Repo.all()
   end
 
@@ -133,7 +134,9 @@ defmodule SpellingGame.Exercises do
       ** (Ecto.NoResultsError)
 
   """
-  def get_result!(id), do: Repo.get!(Result, id)
+  def get_result!(id) do
+    from(r in Result, where: r.id == ^id, preload: [:word]) |> Repo.one
+  end
 
   @doc """
   Creates a result.

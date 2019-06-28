@@ -1,5 +1,5 @@
 <h1>Edit Result</h1>
 
-<%= render "form.html", Map.put(assigns, :action, Routes.user_result_path(@conn, :update, @result, @user_id)) %>
+<%= render "form.html", Map.put(assigns, :action, Routes.user_result_path(@conn, :update, @user_id, @result)) %>
 
 <span><%= link "Back", to: Routes.user_result_path(@conn, :index, @user_id) %></span>

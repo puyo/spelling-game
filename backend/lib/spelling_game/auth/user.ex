@@ -6,6 +6,8 @@ defmodule SpellingGame.Auth.User do
     field(:username, :string)
     field(:password, :string)
 
+    has_many :results, SpellingGame.Exercises.Result
+
     timestamps()
   end
 

@@ -17,6 +17,11 @@
     <%= @result.current_spacing %>
   </li>
 
+  <li>
+    <strong>Word:</strong>
+    <%= @result.word.word %>
+  </li>
+
 </ul>
 
 <span><%= link "Edit", to: Routes.user_result_path(@conn, :edit, @result, @user_id) %></span>

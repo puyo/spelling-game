@@ -3,6 +3,9 @@ defmodule SpellingGameWeb.ResultController do
 
   alias SpellingGame.Exercises
   alias SpellingGame.Exercises.Result
+  alias SpellingGame.Exercises.Word
+
+  import Ecto.Query
 
   def index(conn, %{"user_id" => user_id}) do
     results = Exercises.list_results(user_id)
@@ -11,7 +14,8 @@ defmodule SpellingGameWeb.ResultController do
 
   def new(conn, %{"user_id" => user_id}) do
     changeset = Exercises.change_result(%Result{})
-    render(conn, "new.html", user_id: user_id, changeset: changeset)
+    words = from(r in Word, select: {r.word, r.id}) |> SpellingGame.Repo.all()
+    render(conn, "new.html", user_id: user_id, changeset: changeset, words: words)
   end
 
   def create(conn, %{"user_id" => user_id, "result" => result_params}) do
@@ -34,7 +38,8 @@ defmodule SpellingGameWeb.ResultController do
   def edit(conn, %{"user_id" => user_id, "id" => id}) do
     result = Exercises.get_result!(id)
     changeset = Exercises.change_result(result)
-    render(conn, "edit.html", user_id: user_id, result: result, changeset: changeset)
+    words = from(r in Word, select: {r.word, r.id}) |> SpellingGame.Repo.all()
+    render(conn, "edit.html", user_id: user_id, result: result, changeset: changeset, words: words)
   end
 
   def update(conn, %{"user_id" => user_id, "id" => id, "result" => result_params}) do

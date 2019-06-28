@@ -3,6 +3,7 @@
 <table>
   <thead>
     <tr>
+      <th>Word</th>
       <th>Performance</th>
       <th>Current difficulty</th>
       <th>Current spacing</th>
@@ -13,6 +14,7 @@
   <tbody>
 <%= for result <- @results do %>
     <tr>
+      <td><%= result.word.word %></td>
       <td><%= result.performance %></td>
       <td><%= result.current_difficulty %></td>
       <td><%= result.current_spacing %></td>

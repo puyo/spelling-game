@@ -5,6 +5,8 @@
     </div>
   <% end %>
 
+  <%= hidden_input f, :user_id, value: @user_id %>
+
   <%= label f, :performance %>
   <%= number_input f, :performance, step: "any" %>
   <%= error_tag f, :performance %>
@@ -16,6 +18,11 @@
   <%= label f, :current_spacing %>
   <%= number_input f, :current_spacing, step: "any" %>
   <%= error_tag f, :current_spacing %>
+
+  <div class="form-group">
+    <%= select f, :word_id, @words, class: "form-control" %>
+    <%= error_tag f, :word_id %>
+  </div>
 
   <div>
     <%= submit "Save" %>

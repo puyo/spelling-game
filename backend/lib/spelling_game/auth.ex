@@ -1,4 +1,6 @@
 defmodule SpellingGame.Auth do
+  import Ecto.Query
+
   @moduledoc """
   The Auth context.
   """
@@ -35,7 +37,12 @@ defmodule SpellingGame.Auth do
       ** (Ecto.NoResultsError)
 
   """
-  def get_user!(id), do: Repo.get!(User, id)
+  def get_user!(id) do
+    from(u in User,
+      where: u.id == ^id,
+      preload: [:results])
+      |> Repo.one
+  end
 
   @doc """
   Creates a user.
