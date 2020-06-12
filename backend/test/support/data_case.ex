@@ -22,6 +22,7 @@ defmodule SpellingGame.DataCase do
       import Ecto.Changeset
       import Ecto.Query
       import SpellingGame.DataCase
+      import SpellingGame.Fixtures
     end
   end
 

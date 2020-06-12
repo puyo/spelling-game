@@ -15,7 +15,7 @@ config :spelling_game, SpellingGameWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "i51CJjuK2l0QpSb+IU5vzA/IdZpG5hrJZTUFMbHLNkVS5jmFMg0EA0jmRM1QRbWy",
   render_errors: [view: SpellingGameWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: SpellingGame.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub_server: SpellingGame.PubSub
 
 # Configures Elixir's Logger
 config :logger, :console,
