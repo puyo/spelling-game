@@ -6,7 +6,7 @@ See https://www.notion.so/Spelling-Game-f8a41dd0ff2f4776acadac3aba7398f4
 
 ```
 git clone git@github.com:puyo/spelling-game.git
-cd spelling-game
+cd spelling-game/frontend
 npm i
 npm run dev
 ```
