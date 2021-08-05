@@ -39,6 +39,7 @@ defmodule SpellingGameWeb.ResultController do
     result = Exercises.get_result!(id)
     changeset = Exercises.change_result(result)
     words = from(r in Word, select: {r.word, r.id}) |> SpellingGame.Repo.all()
+
     render(conn, "edit.html", user_id: user_id, result: result, changeset: changeset, words: words)
   end
 

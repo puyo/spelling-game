@@ -135,7 +135,7 @@ defmodule SpellingGame.Exercises do
 
   """
   def get_result!(id) do
-    from(r in Result, where: r.id == ^id, preload: [:word]) |> Repo.one
+    from(r in Result, where: r.id == ^id, preload: [:word]) |> Repo.one!()
   end
 
   @doc """

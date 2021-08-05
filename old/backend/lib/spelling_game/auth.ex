@@ -40,8 +40,9 @@ defmodule SpellingGame.Auth do
   def get_user!(id) do
     from(u in User,
       where: u.id == ^id,
-      preload: [:results])
-      |> Repo.one
+      preload: [:results]
+    )
+    |> Repo.one!()
   end
 
   @doc """
