@@ -36,7 +36,7 @@ defmodule SpellingGame.MixProject do
       {:bcrypt_elixir, "~> 2.0"},
       {:ecto_sql, "~> 3.0"},
       {:gettext, "~> 0.11"},
-      {:guardian, "~> 1.2"},
+      {:guardian, "~> 2.2"},
       {:jason, "~> 1.0"},
       {:mix_test_watch, "~> 1.0", only: :dev, runtime: false},
       {:phoenix, "~> 1.5"},
